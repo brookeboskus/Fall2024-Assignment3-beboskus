@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Fall2024_Assignment3_beboskus.Models.Movie>
+
+@{
+    ViewData["Title"] = "Movie List";
+}
+
+<h2>Movies</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Year</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td>@movie.Title</td>
+                <td>@movie.Genre</td>
+                <td>@movie.Year</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@movie.Id" class="btn btn-danger">Details</a>
+                    <a asp-action="Edit" asp-route-id="@movie.Id" class="btn btn-danger">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@movie.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Create New Movie</a>
+<a asp-controller="Home" asp-action="Index" class="btn btn-primary">Home</a>

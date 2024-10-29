@@ -1,0 +1,29 @@
+﻿@model Fall2024_Assignment3_beboskus.Models.Actor
+
+@{
+    ViewData["Title"] = "Actor Details";
+}
+
+<h2>@Model.Name</h2>
+<p><strong>Gender:</strong> @Model.Gender</p>
+<p><strong>Age:</strong> @Model.Age years</p>
+<p><strong>IMDB Link:</strong> <a href="@Model.IMDBLink" target="_blank">@Model.IMDBLink</a></p>
+<p><strong>Photo:</strong></p>
+<img src="@Model.PhotoUrl" alt="@Model.Name" style="max-width:200px;" />
+
+<h3>Movies featuring @Model.Name:</h3>
+@if (Model.Movies != null && Model.Movies.Any())
+{
+    <ul>
+        @foreach (var movie in Model.Movies)
+        {
+            <li>@movie.Title</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No movies are listed for this actor.</p>
+}
+
+<a asp-action="Index" class="btn btn-secondary">Back to Actor List</a>

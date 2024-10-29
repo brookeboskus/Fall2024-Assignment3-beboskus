@@ -1,0 +1,23 @@
+﻿@model Fall2024_Assignment3_beboskus.ViewModels.MovieReviewsViewModel
+
+<h2>Reviews for @Model.MovieTitle</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Review</th>
+            <th>Sentiment</th> <!-- Optional for now -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var review in Model.Reviews)
+        {
+            <tr>
+                <td>@review.Review</td>
+                <td>@review.Sentiment</td> <!-- Placeholder sentiment -->
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Details" asp-controller="Movies" asp-route-id="@Model.MovieId" class="btn btn-secondary">Back to Movie Details</a>

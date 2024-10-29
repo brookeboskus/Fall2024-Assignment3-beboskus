@@ -1,0 +1,32 @@
+﻿@model Fall2024_Assignment3_beboskus.ViewModels.MovieReviewsViewModel
+
+@{
+    ViewData["Title"] = "Reviews for " + Model.Movie.Title;
+}
+
+<h2>Reviews for @Model.Movie.Title</h2>
+<p>Genre: @Model.Movie.Genre (@Model.Movie.Year)</p>
+<p>IMDB Link: <a href="@Model.Movie.IMDBLink" target="_blank">@Model.Movie.IMDBLink</a></p>
+
+<h3>Reviews</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Review</th>
+            <th>Sentiment</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var review in Model.Reviews)
+        {
+            <tr>
+                <td>@review.Review</td>
+                <td>@review.Sentiment</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Details" asp-route-id="@Model.Movie.Id" class="btn btn-secondary">Back to Movie Details</a>
+

@@ -1,0 +1,81 @@
+﻿<Properties StartupConfiguration="{CE2D9AD2-57C6-4C74-B576-DC50703CAED3}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Fall2024-Assignment3-beboskus PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fall2024-Assignment3-beboskus/Controllers/AIController.cs">
+    <Files>
+      <File FileName="Fall2024-Assignment3-beboskus/wwwroot/css/site.css" />
+      <File FileName="Fall2024-Assignment3-beboskus/wwwroot/js/site.js" />
+      <File FileName="Fall2024-Assignment3-beboskus/Program.cs" Line="19" Column="34" />
+      <File FileName="Fall2024-Assignment3-beboskus/Controllers/HomeController.cs" Line="17" Column="6" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Home/Index.cshtml" Line="16" Column="7" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Shared/_Layout.cshtml" Line="30" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Home/Privacy.cshtml" Line="1" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Shared/_LoginPartial.cshtml" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/_ViewStart.cshtml" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Shared/_Layout.cshtml.css" />
+      <File FileName="Fall2024-Assignment3-beboskus/Models/Movie.cs" Line="27" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Controllers/MoviesController.cs" Line="104" Column="16" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Movies/Index.cshtml" Line="25" Column="21" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Actors/Index.cshtml" Line="19" Column="37" />
+      <File FileName="Fall2024-Assignment3-beboskus/Controllers/ActorsController.cs" Line="90" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Movies/Details.cshtml" Line="28" Column="71" />
+      <File FileName="Fall2024-Assignment3-beboskus/appsettings.json" Line="1" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Data/ApplicationDbContext.cs" Line="21" Column="37" />
+      <File FileName="Fall2024-Assignment3-beboskus/Models/Actor.cs" Line="25" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Movies/Delete.cshtml" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Actors/Create.cshtml" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Actors/Delete.cshtml" Line="1" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Movies/Create.cshtml" Line="1" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Properties/launchSettings.json" Line="39" Column="2" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Movies/Edit.cshtml" Line="22" Column="54" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Actors/Edit.cshtml" Line="38" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Actors/Details.cshtml" Line="23" Column="2" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/Movies/Reviews.cshtml" Line="16" Column="28" />
+      <File FileName="Fall2024-Assignment3-beboskus/ViewModels/MovieReviewsViewModel.cs" Line="12" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Controllers/AIController.cs" Line="60" Column="50" />
+      <File FileName="Fall2024-Assignment3-beboskus/Models/AI.cshtml" Line="1" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/OpenAI/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/OpenAI/Reviews.cshtml" Line="24" Column="1" />
+      <File FileName="Fall2024-Assignment3-beboskus/Views/OpenAI/Tweets.html" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Fall2024-Assignment3-beboskus" expanded="True">
+            <Node name="Fall2024-Assignment3-beboskus" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True">
+                  <Node name="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Movies" expanded="True" />
+                <Node name="OpenAI" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

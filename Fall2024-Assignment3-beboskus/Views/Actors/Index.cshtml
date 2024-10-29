@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Fall2024_Assignment3_beboskus.Models.Actor>
+
+<h2>Actors</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>IMDBLink</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var actor in Model)
+        {
+            <tr>
+                <td>@actor.Name</td>
+                <td>@actor.Gender</td>
+                <td>@actor.Age</td>
+                <td>@actor.IMDBLink</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@actor.Id" class="btn btn-danger">Details</a>
+                    <a asp-action="Edit" asp-route-id="@actor.Id" class="btn btn-danger">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@actor.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Add New Actor</a>
+<a asp-controller="Home" asp-action="Index" class="btn btn-primary">Home</a>

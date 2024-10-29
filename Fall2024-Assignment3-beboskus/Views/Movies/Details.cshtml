@@ -1,0 +1,28 @@
+﻿@model Fall2024_Assignment3_beboskus.Models.Movie
+
+@{
+    ViewData["Title"] = "Movie Details";
+}
+
+<h2>@Model.Title (@Model.Year)</h2>
+<p><strong>Genre:</strong> @Model.Genre</p>
+<p><strong>IMDB Link:</strong> <a href="@Model.IMDBLink" target="_blank">@Model.IMDBLink</a></p>
+<p><strong>Poster:</strong></p>
+<img src="@Model.PosterUrl" alt="@Model.Title" style="max-width:200px;" />
+
+<h3>Actors in this movie:</h3>
+@if (Model.Actors != null && Model.Actors.Any())
+{
+    <ul>
+        @foreach (var actor in Model.Actors)
+        {
+            <li>@actor.Name (@actor.Gender, @actor.Age years old)</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No actors are listed for this movie.</p>
+}
+<a asp-action="Reviews" asp-controller="AI" asp-route-id="@Model.Id" class="btn btn-primary">Reviews</a>
+<a asp-action="Index" class="btn btn-secondary">Back to Movie List</a>

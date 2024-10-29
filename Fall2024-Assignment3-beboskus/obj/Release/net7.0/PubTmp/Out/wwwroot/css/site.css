@@ -1,0 +1,125 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffe7ed;
+    color: #9b0028;
+    margin-bottom: 60px;
+}
+
+.jumbotron {
+    background: #ffe7ed;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #9b0028;
+    text-align: center;
+}
+
+    .jumbotron h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #ff618a; 
+    }
+
+    .jumbotron p {
+        font-size: 1.3rem;
+        font-style: italic;
+        color: #000000; /* Deep purple for the text */
+    }
+
+/* Buttons with fun styling */
+.btn-primary, .btn-secondary {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ff8ba9; 
+    border-color: #ff8ba9;
+    color: white;
+}
+
+    .btn-primary:hover {
+        background-color: #ff618a; 
+        border-color: #ff618a;
+    }
+
+.btn-secondary {
+    background-color: #ff8ba9;
+    border-color: #ff8ba9;
+    color: white;
+}
+
+    .btn-secondary:hover {
+        background-color: #ff618a; 
+        border-color: #ff618a;
+    }
+
+/* Footer */
+footer {
+    background-color: #ff8ba9;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: scale(1.1); /* Enlarges buttons on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+    .jumbotron h1 {
+        animation: bounce 2s infinite;
+    }
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+.card-title {
+    color: #ff69b4; /* Girly pink for the movie title */
+}
